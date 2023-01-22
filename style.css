@@ -12,13 +12,20 @@ body{
 header,footer,section.intro{
 background-color: #1F2937;
 }
+header h3, header ul, section.intro{
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
 header h3{
     margin-top: 0;
+    text-align: left;
+    
 }
 header li{
     display:inline-block;
     margin-left: 1rem;
     margin-right: 1rem;
+
 }
 header li a {
     color: #F9FAF8;
@@ -27,16 +34,34 @@ header li a {
 }
 header ul {
     list-style: none;
+    text-align: right;
+
+}
+header p.placeholder{
+    text-align: center;
+    background-color: grey;
+    padding: 5rem;
+    margin-left: 25rem;
+   
+
 }
 section.intro h1{
     font-size: 48px;
     font-weight: bolder;
     color: #f9FAF8;
     margin-top: 0;
+    margin-right: 35rem;
+    display: inline;
+    
 }
 section.intro p {
     font-size: 18px;
     color: #E5E7EB;
+}
+section.intro p:first-of-type{
+    margin-right: 35rem;
+    display: inline-block;
+
 }
 button{
     background-color: #3882F6;
@@ -45,6 +70,7 @@ button{
     padding-right: 1rem;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+    border-radius: 5px;
     
 }
 header h3{
@@ -52,12 +78,20 @@ header h3{
     font-size: 24px;
     color: #F9FAF8;
 }
-section.info{
-   display: flex;
-  align-items: flex-end;
-  justify-content: end;
-    
+section.flex-info{
+    display: flex;
 }
+section.info{
+    display: flex;
+    justify-content: space-around;
+}
+section.info figure{
+    flex-shrink: 2;
+}
+img {
+    max-width: 15rem;
+}
+
 h2{
     font-size: 36px;
     font-weight: bolder;
@@ -77,9 +111,13 @@ section.quote p:first-of-type{
     font-weight: lighter;
     font-style: italic;
     color: #1F2937;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 section.quote p:last-of-type{
     text-align: right;
+    font-size: 1.5rem;
+    margin-right: 10rem;
 }
 
 section.sign-up{
@@ -89,12 +127,15 @@ section.sign-up{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:2rem;
+    padding:3rem;
+    border-radius: 15px;
    
     
 }
 section.sign-up button{
     border: white solid 2px;
+    border-radius: 8px;
+    
 }
 
 
@@ -103,8 +144,11 @@ footer{
     color: #F9FAF8;
     text-align: center;
    padding: 0.5rem;
+   padding-top: 2rem;
 }
-
+footer p {
+padding-bottom: 2rem;
+}
 img {
     width: 100%;
 }
