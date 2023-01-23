@@ -93,6 +93,8 @@ section.info figure{
 }
 img {
     max-width: 15rem;
+
+
 }
 
 h2{
@@ -136,15 +138,22 @@ section.sign-up{
 section.sign-up button{
     border: white solid 2px;
     border-radius: 8px;
+    font-size: 1rem;
 margin-left: auto;
 align-self: center;
-    
+padding: 1rem;    
 
 }
-section.sign-up p, section.sign-up h3{
+section.sign-up figure{
+    font-size: 1.5rem;
+    font-weight: bold;
+
     
 }
-
+section.sign-up figcaption{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
 
 footer{
     color: #F9FAF8;
